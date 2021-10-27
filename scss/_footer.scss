@@ -1,0 +1,150 @@
+footer{
+    background-color: #000;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "uno       dos     tres";
+    .divFooter{
+        grid-area: dos;
+        display: flex;
+        justify-content: center;
+        .copyFooter{
+                color: #fff;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                padding-top: 2.5rem;
+                padding-bottom: 1rem;
+                font-size: 15px;
+        }
+    }
+    
+    
+    #redesFooter{
+        grid-area: tres;
+        display: flex;
+        justify-content: end;
+        margin-right: 4rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .redes{
+        height: 3rem;
+        width: 3rem;
+        margin-right: 1rem;
+    }
+    
+    .redesImagen{
+        height: 3rem;
+        width: 3rem;
+        margin-right: 1rem;
+    }
+    
+}
+
+
+@media only screen and (max-width: 480px)
+{
+
+    footer{
+        .divFooter{
+            .copyFooter{
+                    padding-top: 2rem;
+                    padding-bottom: 1rem;
+                    font-size: 10px;
+            }
+        }
+        
+        
+        #redesFooter{
+            margin-right: 1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    
+        .redes{
+            height: 2rem;
+            width: 2rem;
+            margin-right: 1rem;
+        }
+        
+        .redesImagen{
+            height: 2rem;
+            width: 2rem;
+            margin-right: 1rem;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 480px)
+
+{
+
+    footer{
+        .divFooter{
+            .copyFooter{
+                    padding-top: 2rem;
+                    padding-bottom: 1rem;
+                    font-size: 10px;
+            }
+        }
+        
+        
+        #redesFooter{
+            margin-right: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+    
+        .redes{
+            height: 2rem;
+            width: 2rem;
+            margin-right: 1.5rem;
+        }
+        
+        .redesImagen{
+            height: 2rem;
+            width: 2rem;
+            margin-right: 1.5rem;
+        }
+        
+    }
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px)
+
+{
+
+    footer{
+        .divFooter{
+            .copyFooter{
+                    padding-top: 2.5rem;
+                    padding-bottom: 2rem;
+                    font-size: 10px;
+            }
+        }
+        
+        
+        #redesFooter{
+            margin-right: 1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+        }
+    
+        .redes{
+            height: 2rem;
+            width: 2rem;
+            margin-right: 1.5rem;
+        }
+        
+        .redesImagen{
+            height: 2.5rem;
+            width: 2.5rem;
+            margin-right: 1.5rem;
+        }
+        
+    }
+}

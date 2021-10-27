@@ -1,0 +1,147 @@
+
+$colorPrincipal: #B50218;
+$colorSecundario: #FFCDD5;
+$colorBoton: #FF4966;
+$colorGris: #706F6F;
+
+header{
+    background-color: #fff;
+    border-bottom: 4px solid $colorBoton;
+
+
+    .navbar-nav{
+        justify-content: center;
+        float:none;
+        margin:0 auto;
+        display: block;
+        text-align: center;
+    }
+    .navbar-nav > li {
+        display: inline-block;
+        float:none;
+    }
+    .container-fluid{
+        justify-content: center;
+        justify-items: center;
+    }
+
+    #contenedorNav{
+        .contenedorNav__lista{
+            display: inline-block;
+            position:relative;
+            margin: 0 3rem;
+            margin-bottom: 1rem;
+            .menuActivo{
+                border-bottom: 2.5px solid $colorBoton;
+            }
+        }
+        li a{
+            text-decoration: none;
+            color: $colorGris;
+            font-size: 20px;
+            list-style: none;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        li a:hover{
+            border-bottom: 2.5px solid $colorBoton;
+        }
+    }
+
+    #logo{
+        display: flex;
+        justify-content: center;
+        margin-left: 2rem;
+    
+        .logo__imagen{
+            object-fit: cover;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 480px)
+{
+
+    header{
+
+        #contenedorNav{
+            .contenedorNav__lista{
+                display: block;
+                position:relative;
+                margin: 0 0.5rem;
+
+            }
+            li a{
+                font-size: 1.5rem;
+            }
+        }
+
+        #logo{
+            .logo__imagen{
+                width: 45vw;
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 480px)
+{
+    header{
+
+        #contenedorNav{
+            .contenedorNav__lista{
+                display: block;
+                position:relative;
+                margin: 0 0.5rem;
+
+            }
+            li a{
+                font-size: 1.5rem;
+            }
+        }
+
+        #logo{
+            .logo__imagen{
+                width: 40vw;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px)
+
+{
+    header{
+
+        #contenedorNav{
+            .contenedorNav__lista{
+                display: inline-block;
+                position:relative;
+                margin: 0 2rem;
+                margin-bottom: 1rem;
+            }
+            li a{
+                font-size: 20px;
+            }
+        }
+    
+        #logo{
+            display: flex;
+            justify-content: center;
+            margin-left: 2rem;
+        
+            .logo__imagen{
+                object-fit: cover;
+                margin-top: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
